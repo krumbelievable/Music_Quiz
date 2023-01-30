@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine:regular,700" rel="stylesheet" />
+    <!-- Linking index.html to styles.css -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Music Theory Quiz</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title"> Music Theory 101</a></h1>
+        <div> 
+            <p id="timer"></p>
+        </div>
+    </header>
+
+    <main>
+        <section class="container" id="intro">
+            <h2>Music Theory 101 Quiz</h2>
+            <p>
+                This is a quick quiz for those just starting their journey through music theory!
+            </p>
+            <button class="start-quiz">Start Quiz</button>
+        </section>
+        <section class="box-card" id="question" style="display: none;">
+            <h2 id="question-num"></h2>
+            <p id="question-text"></p>
+            <ul>
+                <button id="choice-a"></button>
+                <button id="choice-b"></button>
+                <button id="choice-c"></button>
+                <button id="choice-d"></button>
+            </ul>
+        </section>
+        <section class="score-card" id="score" style="display: none;">
+            <h2>Your score: <span id="score-value"></span></h2>
+            <form id="save-score" method="POST">
+                <label for="player-initials">Save Score: </label>
+                <input type="text" placeholder="Initials" name="player-initials" id="player-initials">
+            </form>
+            <ul id="scoreboard"></ul>
+        </section>
+
+    </main>
+    
+    <script src="./assets/script.js"></script>
+</body>
+</html>
